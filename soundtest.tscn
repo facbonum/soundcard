@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://bupqynsnxdme2"]
+
+[ext_resource type="Script" uid="uid://ksa31crf7rvi" path="res://SoundCard.cs" id="1_btkpv"]
+[ext_resource type="Script" uid="uid://b8bf88f1a337n" path="res://AudioPlayer.cs" id="1_wbcem"]
+
+[sub_resource type="AudioStreamGenerator" id="AudioStreamGenerator_u2ot6"]
+
+[node name="Node3D" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0171051)
+script = ExtResource("1_wbcem")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamGenerator_u2ot6")
+script = ExtResource("1_btkpv")
